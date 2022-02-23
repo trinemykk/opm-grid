@@ -1581,12 +1581,12 @@ namespace Dune
         for (int c = 0; c < numCells; ++c)
         {
           const int nVx = cellVertices_[ c ].size();
-          if( nVx == 4 )
+          if( nVx == 99 ) //4
           {
             cellGeomTypes_[ c ] = Dune::GeometryTypes::simplex(dim);
             hasSimplex = true;
           }
-          else if( nVx == 8 )
+          else if( nVx == 99 ) //8
           {
             cellGeomTypes_[ c ] = Dune::GeometryTypes::cube(dim);
 
